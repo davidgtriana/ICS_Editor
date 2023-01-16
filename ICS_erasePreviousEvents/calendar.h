@@ -100,7 +100,7 @@ public:
     }
 
     void eraseEvents(int eventsToKeep) {
-        std::cout << " ERASING UNDESIRED EVENTS "<< std::endl;
+        std::cout << " ERASING UNDESIRED EVENTS - Events erased: " + (events.size() - eventsToKeep) << std::endl;
         events.erase(events.begin(), events.begin() + events.size() - eventsToKeep);
     }
 
